@@ -1,0 +1,649 @@
+/* =========================================
+   VGWD PRICING
+========================================= */
+
+.vgwd-pricing {
+  position: relative;
+  padding: 120px 0;
+  background: #f5f2ec;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   BACKGROUND ORBS
+========================================= */
+
+.pricing-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+.pricing-orb-one {
+  width: 420px;
+  height: 420px;
+  top: -180px;
+  right: -120px;
+  background: radial-gradient(
+    circle,
+    rgba(252, 115, 17, 0.13),
+    transparent 68%
+  );
+}
+
+.pricing-orb-two {
+  width: 360px;
+  height: 360px;
+  bottom: -180px;
+  left: -120px;
+  background: radial-gradient(
+    circle,
+    rgba(221, 179, 153, 0.18),
+    transparent 70%
+  );
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.pricing-header {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 55px;
+}
+
+.pricing-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #fc7311;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  margin-bottom: 24px;
+}
+
+.pricing-label span {
+  width: 38px;
+  height: 2px;
+  background: #fc7311;
+  display: inline-block;
+}
+
+.pricing-heading-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  align-items: end;
+}
+
+.pricing-mini-title {
+  display: block;
+
+  color: #575b5b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+.pricing-heading-row h2 {
+  margin: 0;
+
+  color: #1d2429;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 0.98;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+.pricing-heading-row h2 strong {
+  color: #fc7311;
+  font-weight: 800;
+}
+
+.pricing-heading-row > p {
+  margin: 0;
+
+  max-width: 480px;
+
+  color: #575b5b;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   PRICING GRID
+========================================= */
+
+.pricing-grid {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.pricing-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 650px;
+  padding: 34px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(29, 36, 41, 0.09);
+  border-radius: 4px;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(252, 115, 17, 0.45);
+
+  box-shadow:
+    0 25px 60px rgba(29, 36, 41, 0.11);
+}
+
+
+/* TOP ORANGE LINE */
+
+.pricing-card::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0;
+  height: 4px;
+
+  background: #fc7311;
+
+  transition: width 0.4s ease;
+}
+
+.pricing-card:hover::before {
+  width: 100%;
+}
+
+
+/* =========================================
+   POPULAR CARD
+========================================= */
+
+.pricing-card-popular {
+  border: 1px solid #fc7311;
+
+  transform: translateY(-16px);
+
+  box-shadow:
+    0 25px 70px rgba(252, 115, 17, 0.13);
+}
+
+.pricing-card-popular:hover {
+  transform: translateY(-24px);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.pricing-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 35px;
+}
+
+.pricing-number {
+  color: #a8a9a6;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.pricing-tag {
+  color: #a8a9a6;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.popular-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  background: #fc7311;
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.popular-badge i {
+  font-size: 12px;
+}
+
+
+/* =========================================
+   PLAN NAME
+========================================= */
+
+.pricing-plan-name {
+  padding: 35px 0 30px;
+
+  border-bottom: 1px solid rgba(29, 36, 41, 0.08);
+}
+
+.pricing-plan-name h3 {
+  margin: 0 0 18px;
+
+  color: #1d2429;
+
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+
+  transition: color 0.3s ease;
+}
+
+.pricing-card:hover .pricing-plan-name h3 {
+  color: #fc7311;
+}
+
+.pricing-price {
+  margin-bottom: 18px;
+
+  color: #1d2429;
+
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.pricing-card-popular .pricing-price {
+  color: #fc7311;
+}
+
+.pricing-plan-name p {
+  margin: 0;
+
+  color: #575b5b;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.pricing-features {
+  padding: 30px 0;
+  flex: 1;
+}
+
+.pricing-feature-title {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: #a8a9a6;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.pricing-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 9px 0;
+
+  color: #575b5b;
+
+  font-size: 14px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pricing-card:hover .pricing-features li {
+  transform: translateX(3px);
+}
+
+.pricing-features li:hover {
+  color: #fc7311;
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #f5f2ec;
+  color: #fc7311;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.pricing-btn {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 18px;
+
+  border: 1px solid #1d2429;
+  background: #1d2429;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.pricing-btn i {
+  font-size: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+.pricing-btn:hover {
+  background: #fc7311;
+  border-color: #fc7311;
+  color: #ffffff;
+}
+
+.pricing-btn:hover i {
+  transform: translate(4px, -4px);
+}
+
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.pricing-bottom {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 25px;
+
+  margin-top: 45px;
+  padding: 28px 32px;
+
+  background: #1d2429;
+
+  border-radius: 4px;
+}
+
+.pricing-bottom-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+
+  background: rgba(252, 115, 17, 0.12);
+  color: #fc7311;
+
+  font-size: 23px;
+}
+
+.pricing-bottom-content span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #a8a9a6;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.pricing-bottom-content h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.pricing-bottom-content h3 strong {
+  color: #fc7311;
+}
+
+.pricing-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 14px 20px;
+
+  background: #fc7311;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pricing-contact-btn i {
+  font-size: 16px;
+}
+
+.pricing-contact-btn:hover {
+  background: #f4965a;
+  color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .vgwd-pricing {
+    padding: 90px 0;
+  }
+
+  .pricing-heading-row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-card-popular {
+    transform: translateY(0);
+  }
+
+  .pricing-card-popular:hover {
+    transform: translateY(-10px);
+  }
+
+  .pricing-card:last-child {
+    grid-column: span 2;
+  }
+
+  .pricing-bottom {
+    grid-template-columns: auto 1fr;
+  }
+
+  .pricing-contact-btn {
+    grid-column: 1 / -1;
+    width: fit-content;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+  .vgwd-pricing {
+    padding: 75px 0;
+  }
+
+  .pricing-header {
+    margin-bottom: 40px;
+  }
+
+  .pricing-heading-row h2 {
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card {
+    min-height: auto;
+    padding: 28px;
+  }
+
+  .pricing-card:last-child {
+    grid-column: auto;
+  }
+
+  .pricing-card-popular {
+    transform: none;
+  }
+
+  .pricing-card-popular:hover {
+    transform: translateY(-8px);
+  }
+
+  .pricing-bottom {
+    grid-template-columns: 1fr;
+    gap: 18px;
+
+    padding: 25px;
+  }
+
+  .pricing-bottom-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .pricing-bottom-content h3 {
+    font-size: 21px;
+  }
+
+  .pricing-contact-btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .pricing-heading-row h2 {
+    font-size: 38px;
+  }
+
+  .pricing-card {
+    padding: 24px;
+  }
+
+  .pricing-plan-name h3 {
+    font-size: 28px;
+  }
+
+  .pricing-price {
+    font-size: 32px;
+  }
+
+  .pricing-bottom {
+    padding: 22px;
+  }
+}

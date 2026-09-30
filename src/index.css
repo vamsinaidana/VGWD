@@ -1,0 +1,974 @@
+ /* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+
+  scroll-padding-top: 90px;
+}
+
+
+body {
+  margin: 0;
+
+  padding: 0;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  font-family:
+    "Inter",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  background: #ffffff;
+
+  color: #0f172a;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+
+#root {
+  width: 100%;
+
+  min-height: 100vh;
+}
+
+
+main {
+  width: 100%;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   DARK BODY
+========================================================= */
+ /* =========================================================
+   VGWD GLOBAL THEME + DARK MODE
+   ========================================================= */
+
+:root {
+  --orange: #fc7311;
+  --orange-light: #f4965a;
+
+  --light-bg: #f5f2ec;
+  --light-white: #ffffff;
+
+  --dark-bg: #080b0d;
+  --dark-section: #101518;
+  --dark-card: #1d2429;
+  --dark-card-2: #232c30;
+
+  --white: #ffffff;
+  --text-dark: #1d2429;
+  --text-gray: #575b5b;
+  --text-light: #a8a9a6;
+
+  --border-light: rgba(29, 36, 41, 0.1);
+  --border-dark: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   GLOBAL
+   ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--light-bg);
+  color: var(--text-dark);
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+button,
+a,
+input,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   APP
+   ========================================================= */
+
+.app {
+  min-height: 100vh;
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+.light-mode {
+  background: var(--light-bg);
+  color: var(--text-dark);
+}
+
+.dark-mode {
+  background: var(--dark-bg);
+  color: var(--white);
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.dark-mode .navbar {
+  background: rgba(8, 11, 13, 0.95) !important;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+  color: #ffffff !important;
+}
+
+.dark-mode .nav-link:hover,
+.dark-mode .nav-link.active {
+  color: var(--orange) !important;
+}
+
+.dark-mode .theme-toggle {
+  background: var(--dark-card);
+  color: #ffffff;
+  border-color: var(--border-dark);
+}
+
+.dark-mode .theme-toggle:hover {
+  background: var(--orange);
+  color: #ffffff;
+  border-color: var(--orange);
+}
+
+.dark-mode .navbar-toggler {
+  background: var(--dark-card);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.dark-mode .hero {
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(252, 115, 17, 0.18),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 10% 85%,
+      rgba(252, 115, 17, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #080b0d 0%,
+      #101518 50%,
+      #1d2429 100%
+    ) !important;
+
+  color: #ffffff;
+}
+
+.dark-mode .hero h1,
+.dark-mode .hero h2,
+.dark-mode .hero h3 {
+  color: #ffffff;
+}
+
+.dark-mode .hero p {
+  color: #a8a9a6;
+}
+
+.dark-mode .hero-grid {
+  opacity: 0.08;
+}
+
+.dark-mode .hero-code-window {
+  background: #101518;
+  border-color: var(--border-dark);
+}
+
+.dark-mode .hero-floating-card {
+  background: var(--dark-card);
+  color: #ffffff;
+  border-color: var(--border-dark);
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.dark-mode .about-section {
+  background: var(--dark-bg) !important;
+  color: #ffffff;
+}
+
+.dark-mode .about-section h1,
+.dark-mode .about-section h2,
+.dark-mode .about-section h3,
+.dark-mode .about-section h4 {
+  color: #ffffff;
+}
+
+.dark-mode .about-section p {
+  color: var(--text-light);
+}
+
+.dark-mode .about-card,
+.dark-mode .about-visual,
+.dark-mode .about-stat {
+  background: var(--dark-card);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .about-stat h3 {
+  color: var(--orange);
+}
+
+.dark-mode .about-stat p {
+  color: var(--text-light);
+}
+
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.dark-mode .services-section {
+  background: #101518 !important;
+  color: #ffffff;
+}
+
+.dark-mode .services-section h1,
+.dark-mode .services-section h2,
+.dark-mode .services-section h3,
+.dark-mode .services-section h4 {
+  color: #ffffff;
+}
+
+.dark-mode .service-item {
+  background: transparent;
+  border-color: var(--border-dark);
+}
+
+.dark-mode .service-item:hover {
+  background: var(--dark-card);
+  border-color: rgba(252, 115, 17, 0.4);
+}
+
+.dark-mode .service-item h3 {
+  color: #ffffff;
+}
+
+.dark-mode .service-item p {
+  color: var(--text-light);
+}
+
+.dark-mode .service-number {
+  color: var(--orange);
+}
+
+.dark-mode .service-icon {
+  color: var(--orange);
+}
+
+.dark-mode .service-feature {
+  background: var(--dark-card);
+  color: var(--text-light);
+  border-color: var(--border-dark);
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.dark-mode .process-section {
+  background: var(--dark-bg) !important;
+  color: #ffffff;
+}
+
+.dark-mode .process-section h1,
+.dark-mode .process-section h2,
+.dark-mode .process-section h3,
+.dark-mode .process-section h4 {
+  color: #ffffff;
+}
+
+.dark-mode .process-section p {
+  color: var(--text-light);
+}
+
+.dark-mode .process-card {
+  background: var(--dark-card);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .process-card:hover {
+  border-color: rgba(252, 115, 17, 0.45);
+}
+
+.dark-mode .process-card h3 {
+  color: #ffffff;
+}
+
+.dark-mode .process-card p {
+  color: var(--text-light);
+}
+
+.dark-mode .process-number {
+  background: var(--orange);
+  color: #ffffff;
+}
+
+.dark-mode .process-feature {
+  background: var(--dark-card-2);
+  color: var(--text-light);
+}
+
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+.dark-mode .projects-section {
+  background: #101518 !important;
+  color: #ffffff;
+}
+
+.dark-mode .projects-section h1,
+.dark-mode .projects-section h2,
+.dark-mode .projects-section h3,
+.dark-mode .projects-section h4 {
+  color: #ffffff;
+}
+
+.dark-mode .projects-section p {
+  color: var(--text-light);
+}
+
+.dark-mode .project-card {
+  background: var(--dark-card) !important;
+  border-color: var(--border-dark);
+  box-shadow: none;
+}
+
+.dark-mode .project-card:hover {
+  background: var(--dark-card-2) !important;
+  border-color: rgba(252, 115, 17, 0.45);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .project-title-row h3 {
+  color: #ffffff;
+}
+
+.dark-mode .project-card:hover .project-title-row h3 {
+  color: var(--orange);
+}
+
+.dark-mode .project-content p {
+  color: var(--text-light);
+}
+
+.dark-mode .project-tech span {
+  background: #101518;
+  color: var(--text-light);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .project-card:hover .project-tech span {
+  background: rgba(252, 115, 17, 0.1);
+  color: var(--orange);
+  border-color: rgba(252, 115, 17, 0.3);
+}
+
+.dark-mode .project-click-hint {
+  color: var(--text-light);
+  border-top-color: var(--border-dark);
+}
+
+.dark-mode .project-card:hover .project-click-hint {
+  color: var(--orange);
+}
+
+
+/* =========================================================
+   PROJECT MODAL
+   ========================================================= */
+
+.dark-mode .project-modal-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .project-modal {
+  background: var(--dark-card);
+  color: #ffffff;
+  border-color: var(--border-dark);
+}
+
+.dark-mode .project-modal h2,
+.dark-mode .project-modal h3 {
+  color: #ffffff;
+}
+
+.dark-mode .project-modal p {
+  color: var(--text-light);
+}
+
+.dark-mode .project-modal-close {
+  background: #101518;
+  color: #ffffff;
+}
+
+.dark-mode .project-modal-close:hover {
+  background: var(--orange);
+}
+
+.dark-mode .modal-tech span {
+  background: #101518;
+  color: var(--text-light);
+  border-color: var(--border-dark);
+}
+
+
+/* =========================================================
+   TEAM
+   ========================================================= */
+
+.dark-mode .team-section {
+  background: var(--dark-bg) !important;
+  color: #ffffff;
+}
+
+.dark-mode .team-section h1,
+.dark-mode .team-section h2,
+.dark-mode .team-section h3,
+.dark-mode .team-section h4 {
+  color: #ffffff;
+}
+
+.dark-mode .team-section p {
+  color: var(--text-light);
+}
+
+.dark-mode .team-card {
+  background: var(--dark-card);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .team-card:hover {
+  background: var(--dark-card-2);
+  border-color: rgba(252, 115, 17, 0.4);
+}
+
+.dark-mode .team-card h3 {
+  color: #ffffff;
+}
+
+.dark-mode .team-role {
+  color: var(--orange);
+}
+
+.dark-mode .team-position {
+  color: var(--text-light);
+}
+
+.dark-mode .team-description {
+  color: var(--text-light);
+}
+
+.dark-mode .team-socials a {
+  background: #101518;
+  color: #ffffff;
+  border-color: var(--border-dark);
+}
+
+.dark-mode .team-socials a:hover {
+  background: var(--orange);
+  color: #ffffff;
+}
+
+.dark-mode .team-rating {
+  color: var(--orange);
+}
+
+
+/* =========================================================
+   WHY VGWD
+   ========================================================= */
+
+.dark-mode .whyvgwd-section {
+  background: #101518 !important;
+  color: #ffffff;
+}
+
+.dark-mode .whyvgwd-section h1,
+.dark-mode .whyvgwd-section h2,
+.dark-mode .whyvgwd-section h3,
+.dark-mode .whyvgwd-section h4 {
+  color: #ffffff;
+}
+
+.dark-mode .whyvgwd-section p {
+  color: var(--text-light);
+}
+
+.dark-mode .why-card {
+  background: var(--dark-card);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .why-card:hover {
+  background: var(--dark-card-2);
+  border-color: rgba(252, 115, 17, 0.4);
+}
+
+.dark-mode .why-card h3 {
+  color: #ffffff;
+}
+
+.dark-mode .why-card p {
+  color: var(--text-light);
+}
+
+.dark-mode .why-icon {
+  color: var(--orange);
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+
+.dark-mode .testimonials-section {
+  background: var(--dark-bg) !important;
+  color: #ffffff;
+}
+
+.dark-mode .testimonials-section h1,
+.dark-mode .testimonials-section h2,
+.dark-mode .testimonials-section h3 {
+  color: #ffffff;
+}
+
+.dark-mode .testimonials-section p {
+  color: var(--text-light);
+}
+
+.dark-mode .testimonial-card {
+  background: var(--dark-card);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .testimonial-card:hover {
+  background: var(--dark-card-2);
+  border-color: rgba(252, 115, 17, 0.4);
+}
+
+.dark-mode .testimonial-card p {
+  color: var(--text-light);
+}
+
+.dark-mode .testimonial-name {
+  color: #ffffff;
+}
+
+.dark-mode .testimonial-role {
+  color: var(--text-light);
+}
+
+.dark-mode .testimonial-stars {
+  color: var(--orange);
+}
+
+
+/* =========================================================
+   PRICING
+   ========================================================= */
+
+.dark-mode .pricing-section {
+  background: #101518 !important;
+  color: #ffffff;
+}
+
+.dark-mode .pricing-section h1,
+.dark-mode .pricing-section h2,
+.dark-mode .pricing-section h3 {
+  color: #ffffff;
+}
+
+.dark-mode .pricing-section p {
+  color: var(--text-light);
+}
+
+.dark-mode .pricing-card {
+  background: var(--dark-card);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .pricing-card:hover {
+  background: var(--dark-card-2);
+  border-color: rgba(252, 115, 17, 0.4);
+}
+
+.dark-mode .pricing-card h3 {
+  color: #ffffff;
+}
+
+.dark-mode .pricing-price {
+  color: var(--orange);
+}
+
+.dark-mode .pricing-feature {
+  color: var(--text-light);
+  border-bottom-color: var(--border-dark);
+}
+
+.dark-mode .pricing-card.popular {
+  border-color: var(--orange);
+}
+
+.dark-mode .popular-badge {
+  background: var(--orange);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.dark-mode .faq-section {
+  background: var(--dark-bg) !important;
+  color: #ffffff;
+}
+
+.dark-mode .faq-section h1,
+.dark-mode .faq-section h2,
+.dark-mode .faq-section h3 {
+  color: #ffffff;
+}
+
+.dark-mode .faq-section p {
+  color: var(--text-light);
+}
+
+.dark-mode .faq-item {
+  background: var(--dark-card);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .faq-question {
+  color: #ffffff;
+}
+
+.dark-mode .faq-question:hover {
+  color: var(--orange);
+}
+
+.dark-mode .faq-answer {
+  color: var(--text-light);
+  border-top-color: var(--border-dark);
+}
+
+.dark-mode .faq-icon {
+  color: var(--orange);
+}
+
+
+/* =========================================================
+   START PROJECT
+   ========================================================= */
+
+.dark-mode .start-project-section {
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(252, 115, 17, 0.14),
+      transparent 30%
+    ),
+    #080b0d !important;
+
+  color: #ffffff;
+}
+
+.dark-mode .start-project-section h1,
+.dark-mode .start-project-section h2,
+.dark-mode .start-project-section h3 {
+  color: #ffffff;
+}
+
+.dark-mode .start-project-section p {
+  color: var(--text-light);
+}
+
+.dark-mode .start-project-card {
+  background: var(--dark-card);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .start-form-group label {
+  color: #ffffff;
+}
+
+.dark-mode .start-form-group input,
+.dark-mode .start-form-group textarea {
+  background: #101518;
+  color: #ffffff;
+  border-color: var(--border-dark);
+}
+
+.dark-mode .start-form-group input::placeholder,
+.dark-mode .start-form-group textarea::placeholder {
+  color: #777;
+}
+
+.dark-mode .start-form-group input:focus,
+.dark-mode .start-form-group textarea:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(252, 115, 17, 0.1);
+}
+
+.dark-mode .project-type,
+.dark-mode .budget-option {
+  background: #101518;
+  color: var(--text-light);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .project-type:hover,
+.dark-mode .budget-option:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.dark-mode .project-type.active,
+.dark-mode .budget-option.active {
+  background: var(--orange);
+  color: #ffffff;
+  border-color: var(--orange);
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.dark-mode .contact-section {
+  background: #101518 !important;
+  color: #ffffff;
+}
+
+.dark-mode .contact-section h1,
+.dark-mode .contact-section h2,
+.dark-mode .contact-section h3 {
+  color: #ffffff;
+}
+
+.dark-mode .contact-section p {
+  color: var(--text-light);
+}
+
+.dark-mode .contact-info {
+  background: var(--dark-card);
+  border-color: var(--border-dark);
+}
+
+.dark-mode .contact-info h3 {
+  color: #ffffff;
+}
+
+.dark-mode .contact-info p {
+  color: var(--text-light);
+}
+
+.dark-mode .contact-item {
+  border-bottom-color: var(--border-dark);
+}
+
+.dark-mode .contact-item i {
+  color: var(--orange);
+}
+
+.dark-mode .contact-social a {
+  background: #101518;
+  color: #ffffff;
+  border-color: var(--border-dark);
+}
+
+.dark-mode .contact-social a:hover {
+  background: var(--orange);
+  color: #ffffff;
+}
+
+.dark-mode .contact-map {
+  border-color: var(--border-dark);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.dark-mode .footer {
+  background: #050708 !important;
+  color: #ffffff;
+}
+
+.dark-mode .footer h3,
+.dark-mode .footer h4 {
+  color: #ffffff;
+}
+
+.dark-mode .footer p {
+  color: var(--text-light);
+}
+
+.dark-mode .footer a {
+  color: var(--text-light);
+}
+
+.dark-mode .footer a:hover {
+  color: var(--orange);
+}
+
+.dark-mode .footer-social a {
+  background: var(--dark-card);
+  color: #ffffff;
+  border-color: var(--border-dark);
+}
+
+.dark-mode .footer-social a:hover {
+  background: var(--orange);
+  color: #ffffff;
+}
+
+.dark-mode .footer-bottom {
+  border-top-color: var(--border-dark);
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.dark-mode .btn-outline-custom {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.dark-mode .btn-outline-custom:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #ffffff;
+}
+
+.dark-mode .btn-orange {
+  background: var(--orange);
+  color: #ffffff;
+}
+
+.dark-mode .btn-orange:hover {
+  background: var(--orange-light);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+.dark-mode ::selection {
+  background: var(--orange);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+.dark-mode::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark-mode::-webkit-scrollbar-track {
+  background: #080b0d;
+}
+
+.dark-mode::-webkit-scrollbar-thumb {
+  background: #384448;
+  border-radius: 20px;
+}
+
+.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+}
+
+
+/* =========================================================
+   MOBILE NAVBAR DARK MODE
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+  .dark-mode .navbar-collapse {
+    background: #101518;
+    border-color: var(--border-dark);
+  }
+
+  .dark-mode .navbar-nav {
+    background: #101518;
+  }
+
+  .dark-mode .nav-link {
+    color: #ffffff !important;
+  }
+
+  .dark-mode .nav-link:hover {
+    color: var(--orange) !important;
+  }
+
+}

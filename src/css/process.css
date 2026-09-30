@@ -1,0 +1,884 @@
+/* =========================================
+   VGWD PROCESS SECTION
+========================================= */
+
+.vgwd-process {
+  position: relative;
+
+  padding: 120px 0 110px;
+
+  background: #f5f2ec;
+
+  overflow: hidden;
+
+  isolation: isolate;
+}
+
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.process-bg {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+.process-bg-one {
+  width: 500px;
+  height: 500px;
+
+  top: -300px;
+  left: -200px;
+
+  background: rgba(252, 115, 17, 0.07);
+
+  filter: blur(5px);
+}
+
+.process-bg-two {
+  width: 420px;
+  height: 420px;
+
+  right: -220px;
+  bottom: -280px;
+
+  background: rgba(221, 179, 153, 0.13);
+
+  filter: blur(4px);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.process-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 55px;
+}
+
+.process-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #575b5b;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.process-label span {
+  width: 35px;
+  height: 2px;
+
+  display: block;
+
+  background: #fc7311;
+}
+
+.process-header-note {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: #a8a9a6;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.process-header-note i {
+  color: #fc7311;
+
+  font-size: 17px;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.process-intro {
+  margin-bottom: 85px;
+}
+
+.process-intro h2 {
+  margin: 0;
+
+  color: #1d2429;
+
+  font-size: clamp(43px, 5vw, 72px);
+
+  line-height: 0.98;
+
+  font-weight: 800;
+
+  letter-spacing: -3px;
+}
+
+.process-intro h2 span {
+  color: #fc7311;
+}
+
+.process-intro p {
+  max-width: 390px;
+
+  margin: 0 0 5px auto;
+
+  color: #575b5b;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.process-timeline {
+  position: relative;
+
+  width: 100%;
+}
+
+
+/* =========================================
+   CENTER LINE
+========================================= */
+
+.process-line {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  left: 50%;
+
+  width: 1px;
+
+  transform: translateX(-50%);
+
+  background: rgba(87, 91, 91, 0.17);
+}
+
+.process-line-progress {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 45%;
+
+  background: linear-gradient(
+    to bottom,
+    #fc7311,
+    #f4965a,
+    #ddb399
+  );
+}
+
+
+/* =========================================
+   STEP
+========================================= */
+
+.process-step {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 230px;
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.process-step:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   LEFT / RIGHT
+========================================= */
+
+.process-step-left {
+  justify-content: flex-start;
+
+  padding-right: calc(50% + 55px);
+}
+
+.process-step-right {
+  justify-content: flex-end;
+
+  padding-left: calc(50% + 55px);
+}
+
+
+/* =========================================
+   PROCESS CARD
+========================================= */
+
+.process-card {
+  position: relative;
+
+  width: 100%;
+
+  padding: 28px 30px;
+
+  background: rgba(255, 255, 255, 0.52);
+
+  border: 1px solid rgba(87, 91, 91, 0.13);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 12px 35px rgba(29, 36, 41, 0.055);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+}
+
+.process-step-left .process-card {
+  transform-origin: right center;
+}
+
+.process-step-right .process-card {
+  transform-origin: left center;
+}
+
+.process-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(252, 115, 17, 0.35);
+
+  background: rgba(255, 255, 255, 0.78);
+
+  box-shadow:
+    0 20px 50px rgba(29, 36, 41, 0.11);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.process-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.process-card-number {
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  color: #a8a9a6;
+}
+
+.process-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: rgba(252, 115, 17, 0.09);
+
+  color: #fc7311;
+
+  font-size: 19px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.process-card:hover .process-icon {
+  background: #fc7311;
+
+  color: #ffffff;
+
+  transform: rotate(-6deg);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.process-subtitle {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #a8a9a6;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.3px;
+
+  text-transform: uppercase;
+}
+
+.process-card h3 {
+  margin: 0 0 10px;
+
+  color: #1d2429;
+
+  font-size: 27px;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  transition: color 0.3s ease;
+}
+
+.process-card:hover h3 {
+  color: #fc7311;
+}
+
+.process-card p {
+  margin: 0 0 18px;
+
+  color: #575b5b;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   POINTS
+========================================= */
+
+.process-points {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+.process-points span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 5px 9px;
+
+  border-radius: 30px;
+
+  border: 1px solid rgba(87, 91, 91, 0.13);
+
+  color: #575b5b;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.process-points i {
+  color: #fc7311;
+}
+
+.process-card:hover .process-points span {
+  border-color: rgba(252, 115, 17, 0.25);
+}
+
+
+/* =========================================
+   CENTER NODE
+========================================= */
+
+.process-node {
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: #f5f2ec;
+
+  border: 1px solid rgba(87, 91, 91, 0.18);
+
+  box-shadow:
+    0 0 0 8px rgba(245, 242, 236, 0.8);
+
+  z-index: 5;
+
+  transition:
+    border-color 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
+}
+
+.process-node span {
+  color: #575b5b;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+
+  transition: color 0.3s ease;
+}
+
+.process-step:hover .process-node {
+  background: #fc7311;
+
+  border-color: #fc7311;
+
+  box-shadow:
+    0 0 0 8px rgba(252, 115, 17, 0.12),
+    0 10px 25px rgba(252, 115, 17, 0.2);
+
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.process-step:hover .process-node span {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.process-bottom {
+  margin-top: 80px;
+
+  padding: 28px 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  border-radius: 15px;
+
+  background: #1d2429;
+
+  box-shadow:
+    0 20px 45px rgba(29, 36, 41, 0.13);
+}
+
+.process-bottom-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(252, 115, 17, 0.12);
+
+  color: #fc7311;
+
+  font-size: 20px;
+}
+
+.process-bottom-content {
+  flex: 1;
+}
+
+.process-bottom-content > span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #575b5b;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+}
+
+.process-bottom-content h3 {
+  margin: 0;
+
+  color: #f5f2ec;
+
+  font-size: 25px;
+
+  font-weight: 750;
+
+  letter-spacing: -1px;
+}
+
+.process-bottom-content h3 span {
+  color: #fc7311;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.process-bottom-btn {
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px 20px;
+
+  border-radius: 8px;
+
+  background: #fc7311;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 10px 25px rgba(252, 115, 17, 0.18);
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.process-bottom-btn:hover {
+  color: #ffffff;
+
+  background: #f4965a;
+
+  transform: translateY(-3px);
+}
+
+.process-bottom-btn i {
+  transition: transform 0.3s ease;
+}
+
+.process-bottom-btn:hover i {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .vgwd-process {
+    padding: 90px 0;
+  }
+
+  .process-intro h2 {
+    font-size: 52px;
+  }
+
+  .process-intro p {
+    margin: 25px 0 0;
+  }
+
+  .process-step-left {
+    padding-right: calc(50% + 40px);
+  }
+
+  .process-step-right {
+    padding-left: calc(50% + 40px);
+  }
+
+  .process-card {
+    padding: 24px;
+  }
+
+  .process-card h3 {
+    font-size: 23px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+  .vgwd-process {
+    padding: 75px 0;
+  }
+
+  .process-header {
+    margin-bottom: 40px;
+  }
+
+  .process-header-note {
+    display: none;
+  }
+
+  .process-intro {
+    margin-bottom: 55px;
+  }
+
+  .process-intro h2 {
+    font-size: 41px;
+
+    letter-spacing: -2px;
+  }
+
+  .process-intro p {
+    margin-top: 25px;
+
+    font-size: 14px;
+  }
+
+
+  /* Timeline */
+
+  .process-line {
+    left: 20px;
+
+    transform: none;
+  }
+
+  .process-line-progress {
+    height: 50%;
+  }
+
+
+  /* Steps */
+
+  .process-step,
+  .process-step-left,
+  .process-step-right {
+    display: block;
+
+    min-height: auto;
+
+    padding: 0 0 0 55px;
+
+    margin-bottom: 25px;
+  }
+
+
+  /* Node */
+
+  .process-node {
+    left: 20px;
+
+    top: 30px;
+
+    width: 40px;
+    height: 40px;
+
+    transform: translate(-50%, 0);
+
+    box-shadow:
+      0 0 0 6px rgba(245, 242, 236, 0.9);
+  }
+
+  .process-step:hover .process-node {
+    transform: translate(-50%, 0) scale(1.05);
+  }
+
+  .process-node span {
+    font-size: 9px;
+  }
+
+
+  /* Card */
+
+  .process-card {
+    padding: 22px;
+
+    border-radius: 14px;
+  }
+
+  .process-card-top {
+    margin-bottom: 16px;
+  }
+
+  .process-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 17px;
+  }
+
+  .process-card h3 {
+    font-size: 22px;
+  }
+
+  .process-card p {
+    font-size: 12px;
+  }
+
+
+  /* Bottom */
+
+  .process-bottom {
+    margin-top: 55px;
+
+    padding: 25px 20px;
+
+    flex-wrap: wrap;
+  }
+
+  .process-bottom-icon {
+    width: 43px;
+    height: 43px;
+  }
+
+  .process-bottom-content {
+    min-width: calc(100% - 63px);
+  }
+
+  .process-bottom-content h3 {
+    font-size: 22px;
+  }
+
+  .process-bottom-btn {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .process-label {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .process-label span {
+    width: 25px;
+  }
+
+  .process-intro h2 {
+    font-size: 34px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .process-step {
+    padding-left: 48px;
+  }
+
+  .process-line {
+    left: 17px;
+  }
+
+  .process-node {
+    left: 17px;
+
+    width: 35px;
+    height: 35px;
+  }
+
+  .process-card {
+    padding: 19px;
+  }
+
+  .process-card h3 {
+    font-size: 20px;
+  }
+
+  .process-card p {
+    font-size: 11px;
+  }
+
+  .process-points span {
+    font-size: 8px;
+  }
+
+  .process-bottom-content h3 {
+    font-size: 20px;
+  }
+}
