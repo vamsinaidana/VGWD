@@ -60,7 +60,7 @@ const FAQ = () => {
 
   return (
     <div>
-     <section className="vgwd-faq" id="faq">
+     <section className="vgwd-faq section" id="faq">
 
       {/* Background */}
       <div className="faq-grid-bg"></div>
@@ -84,14 +84,14 @@ const FAQ = () => {
                 QUESTIONS & ANSWERS
               </span>
 
-              <h2>
+              <h2 className="white-text">
                 Everything You
                 <br />
                 <strong>Need To Know.</strong>
               </h2>
             </div>
 
-            <p>
+            <p className="white-text">
               Have questions about working with VGWD? Find answers to some of
               the most common questions about our process, development and
               services.
@@ -108,7 +108,7 @@ const FAQ = () => {
           {/* LEFT SIDE */}
           <div className="faq-side">
 
-            <div className="faq-side-number">
+            <div className="faq-side-number white-text">
               08
             </div>
 
@@ -116,13 +116,13 @@ const FAQ = () => {
               COMMON QUESTIONS
             </span>
 
-            <h3>
+            <h3 className=" white-text">
               Clear answers.
               <br />
               <strong>No confusion.</strong>
             </h3>
 
-            <p>
+            <p className="white-text">
               We believe good communication is just as important as good
               development. If you don't find what you're looking for, reach
               out to us directly.
@@ -164,7 +164,7 @@ const FAQ = () => {
                         {faq.id}
                       </span>
 
-                      <span className="faq-question-text">
+                      <span className="faq-question-text white-text">
                         {faq.question}
                       </span>
 
@@ -189,7 +189,7 @@ const FAQ = () => {
                     }`}
                   >
                     <div className="faq-answer-inner">
-                      <p>{faq.answer}</p>
+                      <p className="white-text">{faq.answer}</p>
                     </div>
                   </div>
 

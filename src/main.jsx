@@ -19,6 +19,7 @@ import "./css/contact.css";
 import "./css/footer.css";
  import "./index.css";
  import "./css/team.css";
+ import "@fortawesome/fontawesome-free/css/all.min.css";
  
 createRoot(document.getElementById('root')).render(
   <StrictMode>

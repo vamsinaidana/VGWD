@@ -29,7 +29,7 @@ const WhyVGWD = () => {
   ];
   return (
     <div>
-     <section className="why-vgwd" id="why-vgwd">
+     <section className="why-vgwd section" id="why-vgwd">
 
       {/* Background Decorations */}
 
@@ -64,7 +64,7 @@ const WhyVGWD = () => {
               MORE THAN
             </span>
 
-            <h2>
+            <h2 className=" white-text">
               Just A
               <strong> Website.</strong>
             </h2>
@@ -72,7 +72,7 @@ const WhyVGWD = () => {
           </div>
 
 
-          <div className="why-description">
+          <div className="why-descriptio white-text">
 
             <p>
               We don't just build websites. We create digital

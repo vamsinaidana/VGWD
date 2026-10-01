@@ -16,18 +16,18 @@
           {/* LEFT CONTENT */}
           <div className="col-lg-6">
 
-            <div className="hero-badge">
-              <span className="badge-dot"></span>
+            <div className="hero-badge white-text">
+              <span className="badge-dot "></span>
               <span>Digital Solutions • Web Development</span>
             </div>
 
-            <h1 className="hero-title">
+            <h1 className="hero-title white-text">
               We Build
               <span className="gradient-text"> Digital Experiences </span>
               That Matter.
             </h1>
 
-            <p className="hero-description">
+            <p className="hero-description white-text">
               VGWD helps startups, businesses and brands turn ideas into
               powerful digital products through modern web development,
               creative design and scalable technology.
@@ -52,21 +52,21 @@
             <div className="hero-trust">
 
               <div className="trust-item">
-                <strong>50+</strong>
+                <strong className='white-text'>50+</strong>
                 <span>Projects</span>
               </div>
 
               <div className="trust-divider"></div>
 
               <div className="trust-item">
-                <strong>20+</strong>
+                <strong className='white-text'>20+</strong>
                 <span>Technologies</span>
               </div>
 
               <div className="trust-divider"></div>
 
               <div className="trust-item">
-                <strong>100%</strong>
+                <strong className='white-text'>100%</strong>
                 <span>Commitment</span>
               </div>
 

@@ -174,7 +174,7 @@ const Testimonials = () => {
 
                 <div>
 
-                  <h3>
+                  <h3 className="white-text">
                     {testimonial.name}
                   </h3>
 

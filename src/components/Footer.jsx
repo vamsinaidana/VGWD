@@ -92,7 +92,7 @@ const Footer = () => {
               <div className="footer-socials">
 
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/vamsinaidana/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"
@@ -101,7 +101,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/vamsinaidana"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"
@@ -110,7 +110,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/vgwd_2024/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram"
@@ -119,7 +119,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="https://www.youtube.com/"
+                  href="https://www.youtube.com/@admin_vamsi"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="YouTube"
@@ -128,14 +128,13 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="https://wa.me/919999999999"
+                  href="https://wa.me/917416409117"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="WhatsApp"
                 >
                   <i className="bi bi-whatsapp"></i>
                 </a>
-
               </div>
 
             </div>
@@ -150,7 +149,7 @@ const Footer = () => {
               </span>
 
               <button
-                onClick={() => scrollToSection("hero")}
+                onClick={() => scrollToSection("home")}
               >
                 Home
               </button>
@@ -248,9 +247,9 @@ const Footer = () => {
                 vamsinaidana@gmail.com
               </a>
 
-              <a href="tel:+919999999999">
+              <a href="tel:+917416409117">
                 <i className="bi bi-telephone"></i>
-                +91 99999 99999
+                +91 74164 09117
               </a>
 
               <span className="footer-location">

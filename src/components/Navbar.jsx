@@ -33,7 +33,7 @@
    return (
      <div>
 
-    <nav className={`vgwd-navbar ${scrolled ? "navbar-scrolled" : ""}`}>
+    <nav className={`vgwd-navbar  ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="container">
         <div className="navbar-inner">
 

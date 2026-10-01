@@ -60,7 +60,7 @@ const Pricing = () => {
 
   return (
     <div>
-       <section className="vgwd-pricing" id="pricing">
+       <section className="vgwd-pricing section" id="pricing">
       <div className="pricing-orb pricing-orb-one"></div>
       <div className="pricing-orb pricing-orb-two"></div>
 
@@ -81,13 +81,13 @@ const Pricing = () => {
                 SIMPLE & TRANSPARENT
               </span>
 
-              <h2>
+              <h2 className=" white-text">
                 Plans That Fit
                 <strong> Your Vision.</strong>
               </h2>
             </div>
 
-            <p>
+            <p className="white-text">
               Whether you're starting from scratch or scaling an existing
               business, choose a package that matches your digital goals.
             </p>
@@ -138,7 +138,7 @@ const Pricing = () => {
                   {plan.price}
                 </div>
 
-                <p>{plan.description}</p>
+                <p className="white-text">{plan.description}</p>
               </div>
 
 
@@ -151,7 +151,7 @@ const Pricing = () => {
 
                 <ul>
                   {plan.features.map((feature, index) => (
-                    <li key={index}>
+                    <li className="white-text" key={index}>
                       <span className="feature-icon">
                         <i className="bi bi-check2"></i>
                       </span>

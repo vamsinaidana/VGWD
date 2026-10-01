@@ -446,7 +446,7 @@ const categories = [
               className="project-modal-close"
               onClick={() => setSelectedProject(null)}
             >
-              <i className="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-x"></i>
             </button>
 
             {/* MODAL IMAGE */}

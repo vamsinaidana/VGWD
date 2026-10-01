@@ -151,10 +151,7 @@ a {
   border-bottom: 1px solid var(--border-dark);
 }
 
-.dark-mode .navbar-brand,
-.dark-mode .nav-link {
-  color: #ffffff !important;
-}
+ 
 
 .dark-mode .nav-link:hover,
 .dark-mode .nav-link.active {
@@ -964,7 +961,7 @@ a {
   }
 
   .dark-mode .nav-link {
-    color: #ffffff !important;
+    color: #101518 !important;
   }
 
   .dark-mode .nav-link:hover {
@@ -972,3 +969,15 @@ a {
   }
 
 }
+ 
+
+  .dark-mode .section {
+    background: #101518 !important;
+  }
+
+  .dark-mode .nav-link:hover {
+    color: var(--orange) !important;
+  }
+  .dark-mode .white-text {
+    color: #ffffff !important;
+  }

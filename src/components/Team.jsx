@@ -49,7 +49,7 @@ const Team = () => {
   ];
   return (
     <div>
-        <section className="vgwd-team" id="team">
+        <section className="vgwd-team section" id="team">
 
       {/* Background Elements */}
       <div className="team-orb team-orb-one"></div>
@@ -73,14 +73,14 @@ const Team = () => {
                 THE PEOPLE BEHIND VGWD
               </span>
 
-              <h2>
+              <h2 className=" white-text">
                 Meet The
                 <br />
                 <strong>Team.</strong>
               </h2>
             </div>
 
-            <p>
+            <p className="white-text">
               Great digital products are built by people who care about
               design, technology, quality and the experience behind every
               interaction.
@@ -145,18 +145,16 @@ const Team = () => {
                 <div className="team-image-socials">
 
                   <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
+                    href="#"
+                     rel="noreferrer"
                     aria-label={`${member.name} LinkedIn`}
                   >
                     <i className="bi bi-linkedin"></i>
                   </a>
 
                   <a
-                    href={member.github}
-                    target="_blank"
-                    rel="noreferrer"
+                    href="#"
+                     rel="noreferrer"
                     aria-label={`${member.name} GitHub`}
                   >
                     <i className="bi bi-github"></i>
@@ -205,7 +203,7 @@ const Team = () => {
                 </div>
 
 
-                <p>
+                <p className=" white-text">
                   {member.description}
                 </p>
 

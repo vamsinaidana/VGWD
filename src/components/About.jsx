@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-     <section className="vgwd-about" id="about">
+     <section className="vgwd-about section" id="about">
       <div className="about-bg-shape about-shape-one"></div>
       <div className="about-bg-shape about-shape-two"></div>
 
@@ -25,21 +25,21 @@ const About = () => {
 
           {/* LEFT CONTENT */}
           <div className="col-lg-6">
-            <div className="about-content">
+            <div className="about-content ">
 
-              <h2>
+              <h2 className="white-text">
                 We Build
                 <span> Digital Experiences </span>
                 That Move Businesses Forward.
               </h2>
 
-              <p className="about-intro">
+              <p className="about-intro white-text">
                 VGWD is a modern web development team focused on creating
                 powerful, responsive and user-friendly digital experiences
                 for startups, businesses and growing brands.
               </p>
 
-              <p className="about-description">
+              <p className="about-description white-text">
                 From strategy and UI/UX design to development and deployment,
                 we transform ideas into websites that look great, perform
                 smoothly and help businesses build a stronger digital
@@ -53,7 +53,7 @@ const About = () => {
                 </a>
 
                 <div className="about-trust">
-                  <i className="bi bi-check-circle-fill"></i>
+                  <i className="bi bi-check-circle-fill "></i>
                   Built with quality & purpose
                 </div>
               </div>
@@ -146,22 +146,22 @@ const About = () => {
         <div className="about-stats">
 
           <div className="about-stat">
-            <strong>25<span>+</span></strong>
+            <strong className="white-text">25<span>+</span></strong>
             <p>Projects Delivered</p>
           </div>
 
           <div className="about-stat">
-            <strong>10<span>+</span></strong>
+            <strong className="white-text">10<span>+</span></strong>
             <p>Modern Technologies</p>
           </div>
 
           <div className="about-stat">
-            <strong>100<span>%</span></strong>
+            <strong className="white-text">100<span>%</span></strong>
             <p>Responsive Design</p>
           </div>
 
           <div className="about-stat">
-            <strong>24<span>/7</span></strong>
+            <strong className="white-text">24<span>/7</span></strong>
             <p>Support & Assistance</p>
           </div>
 

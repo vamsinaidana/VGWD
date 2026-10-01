@@ -49,7 +49,7 @@ const processSteps = [
 const Process = () => {
   return (
     <div>
-     <section className="vgwd-process" id="process">
+     <section className="vgwd-process section" id="process">
 
       {/* Background */}
       <div className="process-bg process-bg-one"></div>
@@ -86,7 +86,7 @@ const Process = () => {
 
             <div className="col-lg-8">
 
-              <h2>
+              <h2 className="white-text">
                 From First Idea
                 <br />
                 <span>To Final Launch.</span>
@@ -96,7 +96,7 @@ const Process = () => {
 
             <div className="col-lg-4">
 
-              <p>
+              <p className="white-text">
                 A simple, transparent and focused process that turns
                 your idea into a digital experience built to perform.
               </p>

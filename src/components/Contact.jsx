@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div>
-    <section className="vgwd-contact" id="contact">
+    <section className="vgwd-contact section" id="contact">
 
       {/* Background Effects */}
       <div className="contact-orb contact-orb-one"></div>
@@ -27,14 +27,14 @@ const Contact = () => {
                 LET'S CONNECT
               </span>
 
-              <h2>
+              <h2 className="white-text">
                 Have A Project
                 <br />
                 <strong>In Mind?</strong>
               </h2>
             </div>
 
-            <p>
+            <p className="white-text">
               Whether you have a clear idea or just the beginning of one,
               we'd love to hear about it. Let's create something meaningful
               together.
@@ -87,7 +87,7 @@ const Contact = () => {
             {/* PHONE */}
 
             <a
-              href="tel:+919999999999"
+              href="tel:+917416409117"
               className="contact-info-item"
             >
 
@@ -97,7 +97,7 @@ const Contact = () => {
 
               <div className="contact-info-text">
                 <span>PHONE</span>
-                <h3>+91 99999 99999</h3>
+                <h3>+91 74164 09117</h3>
               </div>
 
               <i className="bi bi-arrow-up-right contact-arrow"></i>
@@ -132,7 +132,7 @@ const Contact = () => {
               <div className="contact-socials">
 
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/vamsinaidana/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"
@@ -141,7 +141,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/vamsinaidana"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"
@@ -150,7 +150,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/vgwd_2024/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram"
@@ -159,7 +159,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://www.youtube.com/"
+                  href="https://www.youtube.com/@admin_vamsi"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="YouTube"
@@ -168,7 +168,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://wa.me/919999999999"
+                  href="https://wa.me/917416409117"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="WhatsApp"
