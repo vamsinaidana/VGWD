@@ -18,7 +18,7 @@ const Team = () => {
       name: "Vijay Chiranjeevi",
       role: "QA Analyst",
       position: "Quality Assurance",
-      image: "/team/vijay.jpg",
+      image: "vijay.jpg",
       description:
         "Focused on quality, testing and ensuring every digital experience works smoothly across different environments.",
       linkedin: "#",
@@ -29,7 +29,7 @@ const Team = () => {
       name: "Nitish",
       role: "Developer",
       position: "Web Development",
-      image: "/team/nitish.jpg",
+      image: "/nitish.png",
       description:
         "Building responsive and reliable web solutions with a focus on clean code, performance and usability.",
       linkedin: "#",
@@ -37,10 +37,10 @@ const Team = () => {
     },
     {
       id: "04",
-      name: "Divya",
+      name: "anjali",
       role: "Cloud Engineer",
       position: "Cloud & Infrastructure",
-      image: "/team/divya.jpg",
+      image: "/anjali.jpg",
       description:
         "Working with modern cloud technologies and infrastructure to help applications stay reliable and scalable.",
       linkedin: "#",
