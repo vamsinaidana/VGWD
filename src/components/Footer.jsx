@@ -9,7 +9,7 @@ const Footer = () => {
   };
   return (
     <div>
-     <footer className="vgwd-footer">
+     <footer className="vgwd-footer contact-section scroll-reveal reveal-scale">
 
       {/* =========================================
           TOP CTA
@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="footer-cta-content">
 
             <div>
-              <span className="footer-cta-label">
+              <span className="footer-cta-label ">
                 HAVE A PROJECT IN MIND?
               </span>
 
@@ -71,7 +71,7 @@ const Footer = () => {
 
             <div className="footer-brand">
 
-              <button
+              {/* <button
                 type="button"
                 className="footer-logo"
                 onClick={() => scrollToSection("hero")}
@@ -81,7 +81,8 @@ const Footer = () => {
                 </span>
 
                 <span>VGWD</span>
-              </button>
+              </button> */}
+               <img className="footer-logo img-fluid" src="/footlogo.png" alt="VGWD Logo" />
 
               <p>
                 Vamsi Group of Web Development — building modern,

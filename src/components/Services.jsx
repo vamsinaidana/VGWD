@@ -60,7 +60,7 @@ const services = [
 const Services = () => {
   return (
     <div>
-       <section className="vgwd-services" id="services">
+       <section className="vgwd-services services-section scroll-reveal reveal-bottom" id="services">
       {/* Background elements */}
       <div className="services-bg-circle services-circle-one"></div>
       <div className="services-bg-circle services-circle-two"></div>

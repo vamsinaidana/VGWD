@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-     <section className="vgwd-about section" id="about">
+     <section className="vgwd-about section about-section scroll-reveal reveal-left" id="about">
       <div className="about-bg-shape about-shape-one"></div>
       <div className="about-bg-shape about-shape-two"></div>
 

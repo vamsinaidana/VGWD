@@ -10,7 +10,7 @@ import React, { useState } from "react";
       "Developed focus40 CAT and MBA entrance Info landing page",
     image: "/fcat.png",
     technologies: ["HTML", "CSS", "JavaScript","Bootstrap"],
-    live: "https://focus40-cat-2025.netlify.ap",
+    live: "https://focus40-cat-2025.netlify.app/",
    },
   {
     id: 2,
@@ -87,7 +87,7 @@ import React, { useState } from "react";
       "A clean and modern technology blog interface designed for publishing development articles.",
     image: "/blog-2.png",
     technologies: ["React", "CSS", "JavaScript"],
-    live: "https://focus40.netlify.app/",
+    live: "https://blog-app-topaz-tau.vercel.app/",
    },
 
   // ================= CLIENT WEBSITES =================

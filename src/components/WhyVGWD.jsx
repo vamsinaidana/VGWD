@@ -29,7 +29,7 @@ const WhyVGWD = () => {
   ];
   return (
     <div>
-     <section className="why-vgwd section" id="why-vgwd">
+     <section className="why-vgwd section team-section scroll-reveal reveal-bottom" id="why-vgwd">
 
       {/* Background Decorations */}
 

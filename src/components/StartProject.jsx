@@ -85,7 +85,7 @@ Sent from VGWD Website
 
   return (
     <div>
-     <section className="vgwd-start-project" id="start-project">
+     <section className="vgwd-start-project team-section scroll-reveal reveal-bottom" id="start-project">
 
       <div className="start-project-grid"></div>
       <div className="start-project-glow"></div>

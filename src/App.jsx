@@ -15,7 +15,7 @@ import Footer from './components/Footer'
 import Team from './components/Team'
  
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 
 
@@ -26,6 +26,41 @@ import { useState } from "react";
 
 
 function App() {
+
+  // scroll animation
+
+useEffect(() => {
+  const elements = document.querySelectorAll(".scroll-reveal");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+      rootMargin: "0px 0px -50px 0px",
+    }
+  );
+
+  elements.forEach((element) => {
+    observer.observe(element);
+  });
+
+  return () => {
+    observer.disconnect();
+  };
+}, []);
+
+
+
+  // scroll animation ended useEffect
+
+
    const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "app dark-mode" : "app light-mode"}>

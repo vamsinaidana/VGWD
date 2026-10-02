@@ -49,7 +49,7 @@ const processSteps = [
 const Process = () => {
   return (
     <div>
-     <section className="vgwd-process section" id="process">
+     <section className="vgwd-process section projects-section scroll-reveal reveal-right" id="process">
 
       {/* Background */}
       <div className="process-bg process-bg-one"></div>

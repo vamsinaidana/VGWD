@@ -60,7 +60,7 @@ const FAQ = () => {
 
   return (
     <div>
-     <section className="vgwd-faq section" id="faq">
+     <section className="vgwd-faq section team-section scroll-reveal reveal-bottom" id="faq">
 
       {/* Background */}
       <div className="faq-grid-bg"></div>

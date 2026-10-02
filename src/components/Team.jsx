@@ -49,7 +49,7 @@ const Team = () => {
   ];
   return (
     <div>
-        <section className="vgwd-team section" id="team">
+        <section className="vgwd-team section team-section scroll-reveal reveal-bottom" id="team">
 
       {/* Background Elements */}
       <div className="team-orb team-orb-one"></div>

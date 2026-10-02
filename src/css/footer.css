@@ -742,3 +742,23 @@
   }
 
 }
+
+.footer-logo {
+  width: 300px;
+  height: auto;
+  display: block;
+
+  object-fit: contain;
+
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+    border-radius: 8px;
+}
+
+.footer-logo:hover {
+  transform: translateY(-4px) scale(1.03);
+
+  filter:
+    drop-shadow(0 8px 18px rgba(252, 115, 17, 0.28));
+}

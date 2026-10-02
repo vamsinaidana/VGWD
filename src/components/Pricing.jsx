@@ -60,7 +60,7 @@ const Pricing = () => {
 
   return (
     <div>
-       <section className="vgwd-pricing section" id="pricing">
+       <section className="vgwd-pricing section team-section scroll-reveal reveal-bottom" id="pricing">
       <div className="pricing-orb pricing-orb-one"></div>
       <div className="pricing-orb pricing-orb-two"></div>
 

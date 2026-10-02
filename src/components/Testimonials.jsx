@@ -6,35 +6,35 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: "01",
-      name: "Client Name",
-      role: "Business Owner",
+      name: "Kranthi Kumar",
+      role: "Focus40 Academy Founder",
       text: "VGWD understood our idea and transformed it into a clean, modern and responsive digital experience.",
       rating: 5,
     },
     {
       id: "02",
-      name: "Client Name",
+      name: "Divya",
       role: "Startup Founder",
       text: "The communication, attention to detail and development quality made the entire project smooth.",
       rating: 5,
     },
     {
       id: "03",
-      name: "Client Name",
+      name: "Jessy Prasanna",
       role: "Product Owner",
       text: "We wanted something professional and easy to use. VGWD delivered exactly the kind of experience we were looking for.",
       rating: 5,
     },
     {
       id: "04",
-      name: "Client Name",
+      name: "Reddy",
       role: "Entrepreneur",
       text: "From the first idea to the final product, the process was clear, creative and well organised.",
       rating: 5,
     },
     {
       id: "05",
-      name: "Client Name",
+      name: "Shabber Mohammad",
       role: "Creative Director",
       text: "VGWD combines thoughtful design with modern development. The final result felt polished and professional.",
       rating: 5,
@@ -52,7 +52,7 @@ const Testimonials = () => {
 
   return (
     <div>
-       <section className="vgwd-testimonials" id="testimonials">
+       <section className="vgwd-testimonials team-section scroll-reveal reveal-bottom" id="testimonials">
 
       <div className="testimonial-orb testimonial-orb-one"></div>
       <div className="testimonial-orb testimonial-orb-two"></div>

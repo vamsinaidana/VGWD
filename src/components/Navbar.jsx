@@ -38,7 +38,7 @@
         <div className="navbar-inner">
 
           {/* Logo */}
-          <a href="#home" className="vgwd-logo" onClick={closeMenu}>
+          <a href="#home" className="vgwd-logo img-fluid" onClick={closeMenu}>
             {/* <span className="logo-bracket">&lt;</span>
             <span className="logo-name">VGWD</span>
             <span className="logo-bracket">/&gt;</span> */}

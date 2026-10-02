@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div>
-    <section className="vgwd-contact section" id="contact">
+    <section className="vgwd-contact section contact-section scroll-reveal reveal-scale" id="contact">
 
       {/* Background Effects */}
       <div className="contact-orb contact-orb-one"></div>

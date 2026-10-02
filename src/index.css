@@ -981,3 +981,87 @@ a {
   .dark-mode .white-text {
     color: #ffffff !important;
   }
+
+  /* animations */
+
+
+  /* ================================
+   VGWD SCROLL REVEAL ANIMATIONS
+================================ */
+
+.scroll-reveal {
+  opacity: 0;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+/* From Bottom */
+.reveal-bottom {
+  transform: translateY(70px);
+}
+
+/* From Left */
+.reveal-left {
+  transform: translateX(-70px);
+}
+
+/* From Right */
+.reveal-right {
+  transform: translateX(70px);
+}
+
+/* From Top */
+.reveal-top {
+  transform: translateY(-70px);
+}
+
+/* Zoom */
+.reveal-scale {
+  transform: scale(0.88);
+}
+
+/* Active */
+.scroll-reveal.show {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Stagger */
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+.reveal-delay-5 {
+  transition-delay: 0.5s;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(50px);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1;
+    transform: none !important;
+    transition: none;
+  }
+}
