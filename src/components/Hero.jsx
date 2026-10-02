@@ -87,7 +87,7 @@
           <div className="trust-item">
 
             <strong className="white-text">
-              50+
+              25+
             </strong>
 
             <span>
