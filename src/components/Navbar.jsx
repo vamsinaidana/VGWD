@@ -63,6 +63,9 @@
             <a href="#process" className="nav-link" onClick={closeMenu}>
               Process
             </a>
+            <a href="https://reviewsvgwd-wao2.vercel.app/" className="nav-link" onClick={closeMenu}>
+            Reviews
+            </a>
 
             <a href="#projects" className="nav-link" onClick={closeMenu}>
               Projects
