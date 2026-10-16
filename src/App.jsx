@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ScrollRevealHandler from "./components/ScrollRevealHandler";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -60,6 +61,7 @@ useEffect(() => {
       path: "/",
       element: (
         <>
+         <ScrollToTop />
          <ScrollRevealHandler />
 
           <Navbar
@@ -82,6 +84,7 @@ useEffect(() => {
       path: "/about",
       element: (
         <>
+         <ScrollToTop />
          <ScrollRevealHandler />
           <Navbar
             darkMode={darkMode}
@@ -96,6 +99,7 @@ useEffect(() => {
       path: "/projects",
       element: (
         <>
+         <ScrollToTop />
           <ScrollRevealHandler />
           <Navbar
             darkMode={darkMode}
@@ -110,6 +114,7 @@ useEffect(() => {
       path: "/contact",
       element: (
         <>
+         <ScrollToTop />
           <ScrollRevealHandler />
           <Navbar
             darkMode={darkMode}
@@ -124,6 +129,7 @@ useEffect(() => {
       path: "/startproject",
       element: (
         <>
+         <ScrollToTop />
           <ScrollRevealHandler />
           <Navbar
             darkMode={darkMode}
@@ -138,6 +144,7 @@ useEffect(() => {
       path: "/team",
       element: (
         <>
+         <ScrollToTop />
           <ScrollRevealHandler />
             <Navbar
             darkMode={darkMode}
