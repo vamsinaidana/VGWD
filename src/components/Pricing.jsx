@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Pricing = () => {
    const plans = [
@@ -193,10 +194,10 @@ const Pricing = () => {
             </h3>
           </div>
 
-          <a href="#contact" className="pricing-contact-btn">
+          <NavLink to ="contact" className="pricing-contact-btn">
             Talk To VGWD
             <i className="bi bi-arrow-up-right"></i>
-          </a>
+          </NavLink>
 
         </div>
 

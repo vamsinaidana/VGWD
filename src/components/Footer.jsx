@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -40,14 +41,13 @@ const Footer = () => {
               </p>
             </div>
 
-            <button
+            {/* <button
               type="button"
               className="footer-cta-button"
-              onClick={() => scrollToSection("start-project")}
-            >
-              <span>Start A Project</span>
+             >
+              <span> <NavLink to="/startproject">Start A Project</NavLink></span>
               <i className="bi bi-arrow-up-right"></i>
-            </button>
+            </button> */}
 
           </div>
 
@@ -167,11 +167,11 @@ const Footer = () => {
                 Services
               </button>
 
-              <button
+              {/* <button
                 onClick={() => scrollToSection("projects")}
               >
                 Projects
-              </button>
+              </button> */}
 
               <button
                 onClick={() => scrollToSection("testimonials")}

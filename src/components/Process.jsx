@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 const processSteps = [
   {
     number: "01",
@@ -206,10 +207,10 @@ const Process = () => {
 
           </div>
 
-          <a href="#start-project" className="process-bottom-btn">
+          <NavLink to ="startproject" className="process-bottom-btn">
             Start Your Project
             <i className="bi bi-arrow-up-right"></i>
-          </a>
+          </NavLink>
 
         </div>
 

@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import ScrollRevealHandler from "./components/ScrollRevealHandler";
 
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -24,33 +25,34 @@ function App() {
   // Dark mode state FIRST
   const [darkMode, setDarkMode] = useState(false);
 
-  // Scroll reveal animation
-  useEffect(() => {
-    const elements = document.querySelectorAll(".scroll-reveal");
+ 
+// Scroll reveal animation
+useEffect(() => {
+  const elements = document.querySelectorAll(".scroll-reveal");
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px",
-      }
-    );
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+      rootMargin: "0px 0px -50px 0px",
+    }
+  );
 
-    elements.forEach((element) => {
-      observer.observe(element);
-    });
+  elements.forEach((element) => {
+    observer.observe(element);
+  });
 
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  return () => {
+    observer.disconnect();
+  };
+}); // Remove the empty dependency array
 
   // Routes
   const routes = createBrowserRouter([
@@ -58,6 +60,8 @@ function App() {
       path: "/",
       element: (
         <>
+         <ScrollRevealHandler />
+
           <Navbar
             darkMode={darkMode}
             setDarkMode={setDarkMode}
@@ -78,6 +82,7 @@ function App() {
       path: "/about",
       element: (
         <>
+         <ScrollRevealHandler />
           <Navbar
             darkMode={darkMode}
             setDarkMode={setDarkMode}
@@ -91,6 +96,7 @@ function App() {
       path: "/projects",
       element: (
         <>
+          <ScrollRevealHandler />
           <Navbar
             darkMode={darkMode}
             setDarkMode={setDarkMode}
@@ -104,6 +110,7 @@ function App() {
       path: "/contact",
       element: (
         <>
+          <ScrollRevealHandler />
           <Navbar
             darkMode={darkMode}
             setDarkMode={setDarkMode}
@@ -117,6 +124,7 @@ function App() {
       path: "/startproject",
       element: (
         <>
+          <ScrollRevealHandler />
           <Navbar
             darkMode={darkMode}
             setDarkMode={setDarkMode}
@@ -130,7 +138,11 @@ function App() {
       path: "/team",
       element: (
         <>
-           
+          <ScrollRevealHandler />
+            <Navbar
+            darkMode={darkMode}
+            setDarkMode={setDarkMode}
+          />
           <Team />
           <Footer />
         </>

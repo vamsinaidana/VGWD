@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const services = [
   {
@@ -191,10 +192,10 @@ const Services = () => {
             </h3>
           </div>
 
-          <a href="#start-project" className="services-cta">
+          <NavLink to ="startproject" className="services-cta">
             Start a Project
             <i className="bi bi-arrow-up-right"></i>
-          </a>
+          </NavLink>
 
         </div>
 

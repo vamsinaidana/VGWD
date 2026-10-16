@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const WhyVGWD = () => {
    const reasons = [
@@ -174,8 +175,8 @@ const WhyVGWD = () => {
           </div>
 
 
-          <a
-            href="#start-project"
+          <NavLink 
+            to="startproject"
             className="why-cta"
           >
 
@@ -183,7 +184,7 @@ const WhyVGWD = () => {
 
             <i className="bi bi-arrow-up-right"></i>
 
-          </a>
+          </NavLink>
 
         </div>
 

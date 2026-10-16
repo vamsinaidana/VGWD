@@ -1,4 +1,5 @@
  import React, { useEffect, useState } from "react";
+ import { NavLink } from "react-router-dom";
  
  const Navbar = ({ darkMode, setDarkMode }) => {
  
@@ -38,7 +39,7 @@
         <div className="navbar-inner">
 
           {/* Logo */}
-          <a href="#home" className="vgwd-logo img-fluid" onClick={closeMenu}>
+          <a href="/" className="vgwd-logo img-fluid" onClick={closeMenu}>
             {/* <span className="logo-bracket">&lt;</span>
             <span className="logo-name">VGWD</span>
             <span className="logo-bracket">/&gt;</span> */}
@@ -48,36 +49,36 @@
           {/* Desktop Navigation */}
           <div className={`vgwd-nav-links ${menuOpen ? "menu-open" : ""}`}>
 
-            <a href="#home" className="nav-link active" onClick={closeMenu}>
+            <NavLink to="/"  className="nav-link" onClick={closeMenu}>
               Home
-            </a>
+            </NavLink>
 
-            <a href="#about" className="nav-link" onClick={closeMenu}>
+            <NavLink to="/about"  className="nav-link" onClick={closeMenu}>
               About
-            </a>
+            </NavLink>
 
-            <a href="#services" className="nav-link" onClick={closeMenu}>
-              Services
-            </a>
+            
 
-            <a href="#process" className="nav-link" onClick={closeMenu}>
-              Process
-            </a>
-            <a href="https://reviewsvgwd-wao2.vercel.app/" className="nav-link" onClick={closeMenu}>
-            Reviews
-            </a>
+             
+             
 
-            <a href="#projects" className="nav-link" onClick={closeMenu}>
+            <NavLink to="/projects"  className="nav-link" onClick={closeMenu}>
               Projects
-            </a>
+            </NavLink>
 
-            <a href="#team" className="nav-link" onClick={closeMenu}>
+            <NavLink to="/team"  className="nav-link" onClick={closeMenu}>
                Team
-            </a>
+            </NavLink>
 
-            <a href="#contact" className="nav-link" onClick={closeMenu}>
+            <NavLink to="/contact"  className="nav-link" onClick={closeMenu}>
               Contact
-            </a>
+            </NavLink>
+              <NavLink to="/startproject"  className="nav-link" onClick={closeMenu}>
+              Start a Project
+            </NavLink>
+             <NavLink to="https://reviewsvgwd-wao2.vercel.app/"  className="nav-link" onClick={closeMenu}>
+            Reviews
+            </NavLink>
 
             {/* Mobile CTA */}
             <a
@@ -109,10 +110,10 @@
             </button>
 
             {/* Desktop CTA */}
-            <a href="#start-project" className="nav-project-btn">
+            <NavLink to="/startproject" className="nav-project-btn">
               Start a Project
               <i className="bi bi-arrow-up-right"></i>
-            </a>
+            </NavLink>
 
             {/* Mobile Toggle */}
             <button

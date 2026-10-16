@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -128,10 +129,10 @@ const FAQ = () => {
               out to us directly.
             </p>
 
-            <a href="#contact" className="faq-side-btn">
+            <NavLink to ="contact" className="faq-side-btn">
               Ask VGWD
               <i className="bi bi-arrow-up-right"></i>
-            </a>
+            </NavLink>
 
           </div>
 
@@ -222,10 +223,10 @@ const FAQ = () => {
 
           </div>
 
-          <a href="#contact" className="faq-bottom-btn">
+          <NavLink to ="contact" className="faq-bottom-btn">
             Start A Conversation
             <i className="bi bi-arrow-up-right"></i>
-          </a>
+          </NavLink>
 
         </div>
 
